@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+1#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
 Created on Thu Feb  4 20:52:42 2021
@@ -71,16 +71,16 @@ from keras.optimizers import Adam     # optimizer for compiling
 emotion_model.compile(loss='categorical_crossentropy', optimizer=Adam(learning_rate=0.0001, epsilon=1e-6), metrics=['accuracy'])
 
 #emotion_model_info = emotion_model.fit_generator(
- #      train_generator,
-  #      steps_per_epoch= 28709//64,
-   #     epochs=50,
-    #    validation_data=test_generator,
-     #   validation_steps=7178//64
-      #  )
+#        train_generator,
+#        steps_per_epoch= 28709//64,
+#        epochs=50,
+#        validation_data=test_generator,
+#        validation_steps=7178//64
+#        )
 
-#emotion_model.save_weights('model.h5')
+#emotion_model.save_weights('model1.h5')
 
-emotion_model.load_weights('model.h5')
+emotion_model.load_weights('model1.h5')
 
 #initializing with cv2
 cv2.ocl.setUseOpenCL(False)
